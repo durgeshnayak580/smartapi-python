@@ -1,15 +1,15 @@
-from smartapi import SmartConnect
+from SmartApi.smartConnect import SmartConnect
 import pyotp
 import pandas as pd
-import time as time
+import time
 from datetime import datetime, timedelta
 
 # Angel One API credentials
-API_KEY = 'EUGl8dR1'
-CLIENT_ID = 'D52721094'
-PASSWORD = 'Dn3371dyi12'
+API_KEY = "7KRaMCsN"
+CLIENT_ID = "D52721094"
+PASSWORD = "4400"
 TOTP_SECRET = 'NHSTELYG24CVPPWEDS2ABGDU4M'
-SYMBOL_TOKEN = '99926009'  # Bank Nifty CE/PE Symbol token for options
+SYMBOL_TOKEN = '26009'  # Bank Nifty CE/PE Symbol token for options
 
 # Set trading parameters
 CAPITAL = 60000
@@ -19,7 +19,7 @@ PREMIUM_RANGE = (450, 550)
 PROFIT_TARGET = 1.25  # 25% Profit Target
 STOP_LOSS_TRAIL = 0.1  # 10% Trailing Stop Loss
 MAX_TRADES = 2
-NO_ENTRY_AFTER = time(14, 0)
+NO_ENTRY_AFTER = time(14, 0) # 2:00 PM
 AUTO_SQUARE_OFF = time(15, 15)
 
 # Connect to Angel One SmartAPI
@@ -36,17 +36,17 @@ feed_token = smart_connect.getfeedToken()
 def place_order(transaction_type, quantity, price, symbol_token):
     order_params = {
         "variety": "NORMAL",
-        "tradingsymbol": 99926009,
-        "symboltoken": 99926009,
+        "tradingsymbol": symbol_token,
+        "symboltoken": 26009,
         "transactiontype": transaction_type,
         "exchange": "NFO",
-        "ordertype": "market_price",
+        "ordertype": "MARKET",
         "producttype": "INTRADAY",
         "duration": "DAY",
         "price": price,
         "squareoff": 0,
         "stoploss": 0,
-        "quantity": 3,
+        "quantity": quantity,
     }
     order_response = smart_connect.placeOrder(order_params)
     return order_response
@@ -57,7 +57,7 @@ def fetch_historical_data(symbol_token, interval='FIVE_MINUTE'):
     to_time = datetime.now()
     historical_params = {
         "exchange": "NFO",
-        "symboltoken": 99926009,
+        "symboltoken": symbol_token,
         "interval": interval,
         "fromdate": from_time.strftime('%Y-%m-%d %H:%M'),
         "todate": to_time.strftime('%Y-%m-%d %H:%M'),
@@ -90,61 +90,61 @@ def bullish_engulfing_strategy(trades_today):
         print("Open trades detected, skipping new order.")
         return trades_today
     
-data = fetch_historical_data(SYMBOL_TOKEN)
+    data = fetch_historical_data(SYMBOL_TOKEN)
     
-if len(data) < 2:
-    return trades_today
+    if len(data) < 2:
+        return trades_today
     
     last_candle = data.iloc[-1]
     previous_candle = data.iloc[-2]
     
-# Check for Bullish Engulfing Pattern
+    # Check for Bullish Engulfing Pattern
     if previous_candle['close'] < previous_candle['open'] and \
        last_candle['close'] > last_candle['open'] and \
        last_candle['high'] > previous_candle['high'] and \
        last_candle['close'] > previous_candle['high']:
         
-# Check if price is within premium range
-    price = last_candle['close']
-    if PREMIUM_RANGE[0] <= price <= PREMIUM_RANGE[1]:
-       quantity = 3 * LOT_SIZE  # 3 lots of 15 each
-       order_response = place_order('BUY', quantity, price, SYMBOL_TOKEN)
-       print('Order Response:', order_response)
-       trades_today += 1
+        # Check if price is within premium range
+        price = last_candle['close']
+        if PREMIUM_RANGE[0] <= price <= PREMIUM_RANGE[1]:
+            quantity = 3 * LOT_SIZE  # 3 lots of 15 each
+            order_response = place_order('BUY', quantity, price, SYMBOL_TOKEN)
+            print('Order Response:', order_response)
+            trades_today += 1
             
-# Implement profit target and stop loss
-       entry_price = price
-       stop_loss = previous_candle['low']
-       target_price = entry_price * PROFIT_TARGET
+            # Implement profit target and stop loss
+            entry_price = price
+            stop_loss = previous_candle['low']
+            target_price = entry_price * PROFIT_TARGET
             
-       entry_date = datetime.now().date()
-       entry_time = datetime.now().time()
+            entry_date = datetime.now().date()
+            entry_time = datetime.now().time()
             
-while True:
-       current_data = fetch_historical_data(SYMBOL_TOKEN).iloc[-1]
-       current_price = current_data['close']
+            while True:
+                current_data = fetch_historical_data(SYMBOL_TOKEN).iloc[-1]
+                current_price = current_data['close']
                 
-if current_price <= stop_loss:
-       place_order('SELL', quantity, current_price, SYMBOL_TOKEN)
-       print('Stop loss hit. Exiting position.')
-       profit_loss = (current_price - entry_price) * quantity
-       exit_date = datetime.now().date()
-       exit_time = datetime.now().time()
-       log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss)
-       break
-elif current_price >= target_price:
-       place_order('SELL', quantity, current_price, SYMBOL_TOKEN)
-       print('Target hit. Exiting position.')
-       profit_loss = (current_price - entry_price) * quantity
-       exit_date = datetime.now().date()
-       exit_time = datetime.now().time()
-       log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss)
-       break
+                if current_price <= stop_loss:
+                    place_order('SELL', quantity, current_price, SYMBOL_TOKEN)
+                    print('Stop loss hit. Exiting position.')
+                    profit_loss = (current_price - entry_price) * quantity
+                    exit_date = datetime.now().date()
+                    exit_time = datetime.now().time()
+                    log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss)
+                    break
+                elif current_price >= target_price:
+                    place_order('SELL', quantity, current_price, SYMBOL_TOKEN)
+                    print('Target hit. Exiting position.')
+                    profit_loss = (current_price - entry_price) * quantity
+                    exit_date = datetime.now().date()
+                    exit_time = datetime.now().time()
+                    log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss)
+                    break
                 
-# Update trailing stop loss
-       stop_loss = trailing_stop_loss(entry_price, current_price, stop_loss, STOP_LOSS_TRAIL)
-else:
-      print('No Bullish Engulfing Pattern detected.')
+                # Update trailing stop loss
+                stop_loss = trailing_stop_loss(entry_price, current_price, stop_loss, STOP_LOSS_TRAIL)
+    else:
+        print('No Bullish Engulfing Pattern detected.')
     
     return trades_today
 
@@ -163,135 +163,12 @@ def run_strategy():
         else:
             print('Outside trading hours. Waiting...')
         time.sleep(300)  # Wait for 5 minutes before checking again
-       
-       # Placeholder list for open trades
-open_trades = []
 
-def close_all_open_trades():
-    print("Closing all open trades...")
-    for trade in open_trades:
-        # Assuming trade.close() is the method to close a trade
-        trade.close()
-    open_trades.clear()  # Clear the list after closing all trades
-    print("All open trades closed.")
+current_time = datetime.now().time()
 
-def main_trading_logic():
-    try:
-        # Example of fetching live data
-        start_time = time.time()
-        fetch_data()
-        elapsed_time = time.time() - start_time
-
-        if elapsed_time > 30:
-            print("Data fetch took more than 30 seconds, engine off.")
-            close_all_open_trades()
-            return
-
-        # Example of handling broker error
-        if broker_error_detected():
-            print("Broker error detected, engine off.")
-            close_all_open_trades()
-            return
-
-        # Rest of your trading logic
-
-    except Exception as e:
-        print(f"Error occurred: {e}")
-        close_all_open_trades()
-
-def fetch_data():
-    # Simulate data fetching
-    time.sleep(1)  # Simulate a delay
-
-def broker_error_detected():
-    # Placeholder for detecting broker errors
-    return False
-
-# Example trade object and method to simulate placing a trade
-class Trade:
-    def __init__(self, trade_id):
-        self.trade_id = trade_id
+if current_time > NO_ENTRY_AFTER:
+    print("No new entries after 2:00 PM")
+else:
+    print("Entries allowed")
     
-    def close(self):
-        print(f"Trade {self.trade_id} closed.")
-
-# Simulate placing trades
-open_trades.append(Trade(1))
-open_trades.append(Trade(2))
-
 run_strategy()
-    # # Websocket Programming
-
-    from SmartApi.smartWebSocketV2 import SmartWebSocketV2
-
-    AUTH_TOKEN = authToken
-    API_KEY = api_key
-    CLIENT_CODE = username
-    FEED_TOKEN = feedToken
-    # correlation_id = "abc123"
-    action = 1
-    mode = 1
-
-    token_list = [
-        {
-            "exchangeType": 1,
-            "tokens": ["26009","1594"]
-        }
-    ]
-    token_list1 = [
-        {
-            "action": 0,
-            "exchangeType": 1,
-            "tokens": ["26009"]
-        }
-    ]
-
-    #retry_strategy=0 for simple retry mechanism
-    sws = SmartWebSocketV2(AUTH_TOKEN, API_KEY, CLIENT_CODE, FEED_TOKEN,max_retry_attempt=2, retry_strategy=0, retry_delay=10, retry_duration=30)
-
-    #retry_strategy=1 for exponential retry mechanism
-    # sws = SmartWebSocketV2(AUTH_TOKEN, API_KEY, CLIENT_CODE, FEED_TOKEN,max_retry_attempt=3, retry_strategy=1, retry_delay=10,retry_multiplier=2, retry_duration=30)
-
-    def on_data(wsapp, message):
-        logger.info("Ticks: {}".format(message))
-        close_connection()
-
-    def on_control_message(wsapp, message):
-        logger.info(f"Control Message: {message}")
-
-    def on_open(wsapp):
-        logger.info("on open")
-        some_error_condition = False
-        if some_error_condition:
-            error_message = "Simulated error"
-            if hasattr(wsapp, 'on_error'):
-                wsapp.on_error("Custom Error Type", error_message)
-        else:
-            sws.subscribe(correlation_id, mode, token_list)
-            # sws.unsubscribe(correlation_id, mode, token_list1)
-
-    def on_error(wsapp, error):
-        logger.error(error)
-
-    def on_close(wsapp):
-        logger.info("Close")
-
-    def close_connection():
-        sws.close_connection()
-
-
-    # Assign the callbacks.
-    sws.on_open = on_open
-    sws.on_data = on_data
-    sws.on_error = on_error
-    sws.on_close = on_close
-    sws.on_control_message = on_control_message
-
-    sws.connect()
-
-
-    ########################### SmartWebSocket OrderUpdate Sample Code Start Here ###########################
-    from SmartApi.smartWebSocketOrderUpdate import SmartWebSocketOrderUpdate
-    client = SmartWebSocketOrderUpdate(AUTH_TOKEN, API_KEY, CLIENT_CODE, FEED_TOKEN)
-    client.connect()
-    ########################### SmartWebSocket OrderUpdate Sample Code End Here ###########################

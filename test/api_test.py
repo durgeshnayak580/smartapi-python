@@ -1,195 +1,76 @@
-from logzero import logger
-from SmartApi.smartConnect import SmartConnect
-import pyotp
 
-api_key = 'Your Api Key'
-username = 'Your client code'
-pwd = 'Your pin'
-smartApi = SmartConnect(api_key)
+# Main function to run the strategy
+def run_strategy():
+    trades_today = 0
+    while True:
+        now = datetime.now()
+        current_time = now.time()
+        if now.weekday() < 5 and time(9, 15) <= current_time <= AUTO_SQUARE_OFF:
+            if current_time < NO_ENTRY_AFTER and trades_today < MAX_TRADES:
+                trades_today = bullish_engulfing_strategy(trades_today)
+            else:
+                print('Maximum trades reached or past entry time. No more trades today.')
+                break
+        else:
+            print('Outside trading hours. Waiting...')
+        time.sleep(300)  # Wait for 5 minutes before checking again
+       
+       # Placeholder list for open trades
+open_trades = []
 
-try:
-    token = "Your QR value"
-    totp = pyotp.TOTP(token).now()
-except Exception as e:
-    logger.error("Invalid Token: The provided token is not valid.")
-    raise e
+def close_all_open_trades():
+    print("Closing all open trades...")
+    for trade in open_trades:
+        # Assuming trade.close() is the method to close a trade
+        trade.close()
+    open_trades.clear()  # Clear the list after closing all trades
+    print("All open trades closed.")
 
-correlation_id = "abcde"
-data = smartApi.generateSession(username, pwd, totp)
-if data['status'] == False:
-    logger.error(data)
-else:
-    # logger.info(f"data: {data}")
-    authToken = data['data']['jwtToken']
-    refreshToken = data['data']['refreshToken']
-    feedToken = smartApi.getfeedToken()
-    # logger.info(f"Feed-Token :{feedToken}")
-    res = smartApi.getProfile(refreshToken)
-    # logger.info(f"Get Profile: {res}")
-    smartApi.generateToken(refreshToken)
-    res=res['data']['exchanges']
+def main_trading_logic():
+    try:
+        # Example of fetching live data
+        start_time = time.time()
+        fetch_data()
+        elapsed_time = time.time() - start_time
 
-    orderparams = {
-        "variety": "NORMAL",
-        "tradingsymbol": "SBIN-EQ",
-        "symboltoken": "3045",
-        "transactiontype": "BUY",
-        "exchange": "NSE",
-        "ordertype": "LIMIT",
-        "producttype": "INTRADAY",
-        "duration": "DAY",
-        "price": "19500",
-        "squareoff": "0",
-        "stoploss": "0",
-        "quantity": "1"
-    }
-    # Method 1: Place an order and return the order ID
-    orderid = smartApi.placeOrder(orderparams)
-    logger.info(f"PlaceOrder : {orderid}")
-    # Method 2: Place an order and return the full response
-    response = smartApi.placeOrderFullResponse(orderparams)
-    logger.info(f"PlaceOrder : {response}")
+        if elapsed_time > 30:
+            print("Data fetch took more than 30 seconds, engine off.")
+            close_all_open_trades()
+            return
 
-    modifyparams = {
-        "variety": "NORMAL",
-        "orderid": orderid,
-        "ordertype": "LIMIT",
-        "producttype": "INTRADAY",
-        "duration": "DAY",
-        "price": "19500",
-        "quantity": "1",
-        "tradingsymbol": "SBIN-EQ",
-        "symboltoken": "3045",
-        "exchange": "NSE"
-    }
-    smartApi.modifyOrder(modifyparams)
-    logger.info(f"Modify Orders : {modifyparams}")
+        # Example of handling broker error
+        if broker_error_detected():
+            print("Broker error detected, engine off.")
+            close_all_open_trades()
+            return
 
-    smartApi.cancelOrder(orderid, "NORMAL")
+        # Rest of your trading logic
 
-    orderbook=smartApi.orderBook()
-    logger.info(f"Order Book: {orderbook}")
+    except Exception as e:
+        print(f"Error occurred: {e}")
+        close_all_open_trades()
 
-    tradebook=smartApi.tradeBook()
-    logger.info(f"Trade Book : {tradebook}")
+def fetch_data():
+    # Simulate data fetching
+    time.sleep(1)  # Simulate a delay
 
-    rmslimit=smartApi.rmsLimit()
-    logger.info(f"RMS Limit : {rmslimit}")
+def broker_error_detected():
+    # Placeholder for detecting broker errors
+    return False
 
-    pos=smartApi.position()
-    logger.info(f"Position : {pos}")
+# Example trade object and method to simulate placing a trade
+class Trade:
+    def __init__(self, trade_id):
+        self.trade_id = trade_id
+    
+    def close(self):
+        print(f"Trade {self.trade_id} closed.")
 
-    holdings=smartApi.holding()
-    logger.info(f"Holdings : {holdings}")
+# Simulate placing trades
+open_trades.append(Trade(1))
+open_trades.append(Trade(2))
 
-    allholdings=smartApi.allholding()
-    logger.info(f"AllHoldings : {allholdings}")
-
-    exchange = "NSE"
-    tradingsymbol = "SBIN-EQ"
-    symboltoken = 3045
-    ltp=smartApi.ltpData("NSE", "SBIN-EQ", "3045")
-    logger.info(f"Ltp Data : {ltp}")
-
-    mode="FULL"
-    exchangeTokens= {
-    "NSE": [
-    "3045"
-    ]
-    }
-    marketData=smartApi.getMarketData(mode, exchangeTokens)
-    logger.info(f"Market Data : {marketData}")
-
-    exchange = "BSE"
-    searchscrip = "Titan"
-    searchScripData = smartApi.searchScrip(exchange, searchscrip)
-    logger.info(f"Search Scrip Data : {searchScripData}")
-
-    params = {
-        "exchange": "NSE",
-        "oldproducttype": "DELIVERY",
-        "newproducttype": "MARGIN",
-        "tradingsymbol": "SBIN-EQ",
-        "transactiontype": "BUY",
-        "quantity": 1,
-        "type": "DAY"
-
-    }
-
-    convertposition=smartApi.convertPosition(params)
-
-    gttCreateParams = {
-        "tradingsymbol": "SBIN-EQ",
-        "symboltoken": "3045",
-        "exchange": "NSE",
-        "producttype": "MARGIN",
-        "transactiontype": "BUY",
-        "price": 100000,
-        "qty": 10,
-        "disclosedqty": 10,
-        "triggerprice": 200000,
-        "timeperiod": 365
-    }
-    rule_id = smartApi.gttCreateRule(gttCreateParams)
-    logger.info(f"Gtt Rule: {rule_id}")
-
-    gttModifyParams = {
-        "id": rule_id,
-        "symboltoken": "3045",
-        "exchange": "NSE",
-        "price": 19500,
-        "quantity": 10,
-        "triggerprice": 200000,
-        "disclosedqty": 10,
-        "timeperiod": 365
-    }
-    modified_id = smartApi.gttModifyRule(gttModifyParams)
-    logger.info(f"Gtt Modified Rule: {modified_id}")
-
-    cancelParams = {
-        "id": rule_id,
-        "symboltoken": "3045",
-        "exchange": "NSE"
-    }
-
-    cancelled_id = smartApi.gttCancelRule(cancelParams)
-    logger.info(f"gtt Cancel Rule: {cancelled_id}")
-
-    gttdetails=smartApi.gttDetails(rule_id)
-    logger.info(f"GTT Details: {gttdetails}")
-
-    smartApi.gttLists('List of status', '<page>', '<count>')
-
-    candleParams={
-        "exchange": "NSE",
-        "symboltoken": "3045",
-        "interval": "ONE_MINUTE",
-        "fromdate": "2021-02-10 09:15",
-        "todate": "2021-02-10 09:16"
-    }
-    candledetails=smartApi.getCandleData(candleParams)
-    logger.info(f"Historical Data: {candledetails}")
-
-    qParam ="your uniqueorderid"
-    data = smartApi.individual_order_details(qParam)
-    logger.info(f"Individual_order_details: {data}")
-
-    params = {
-        "positions": [{
-        "exchange": "NSE",
-        "qty": 50,
-        "price": 0,
-        "productType": "DELIVERY",
-        "token": "12740",
-        "tradeType": "BUY"
-        }]
-    }
-    margin_api_result=smartApi.getMarginApi(params)
-    logger.info(f"margin_api_result: {margin_api_result}")
-
-    terminate=smartApi.terminateSession('Your client code')
-    logger.info(f"Connection Close: {terminate}")
-
+run_strategy()
     # # Websocket Programming
 
     from SmartApi.smartWebSocketV2 import SmartWebSocketV2

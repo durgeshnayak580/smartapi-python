@@ -80,16 +80,25 @@ def log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss):
         file.write(f"{entry_date},{entry_time},{exit_date},{exit_time},{profit_loss}\n")
 
 def fetch_order_book():
-    # Replace this with the actual API call to get the order book
-    response = get_order_book()
-    return response
+    try:
+        response = smart_api.getOrderBook()
+        if response['status']:
+            return json.dumps(response['data'])
+        else:
+            print(f"Error fetching order book: {response['message']}")
+            return None
+    except Exception as e:
+        print(f"Exception occurred while fetching order book: {e}")
+        return None
 
 def check_open_trades():
     order_book_response = fetch_order_book()  # Get the order book data
-    order_book = json.loads(order_book_response)  # Parse the JSON response
-
-    open_trades = [order for order in order_book if order['status'] in ['open', 'trigger pending']]
-    return len(open_trades) > 0
+    if order_book_response:
+        order_book = json.loads(order_book_response)  # Parse the JSON response
+        open_trades = [order for order in order_book if order['status'] in ['open', 'trigger pending']]
+        return len(open_trades) > 0
+    else:
+        return False
 
 def bullish_engulfing_strategy(trades_today):
     if check_open_trades():

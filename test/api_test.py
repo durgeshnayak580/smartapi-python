@@ -1,8 +1,7 @@
 from SmartApi.smartConnect import SmartConnect
 import pyotp
-import pandas as pd
-import time
-from datetime import datetime, timedelta
+import time as time
+from datetime import time, datetime, timedelta
 
 # Angel One API credentials
 API_KEY = "7KRaMCsN"
@@ -19,8 +18,8 @@ PREMIUM_RANGE = (450, 550)
 PROFIT_TARGET = 1.25  # 25% Profit Target
 STOP_LOSS_TRAIL = 0.1  # 10% Trailing Stop Loss
 MAX_TRADES = 2
-NO_ENTRY_AFTER = time(14, 0) # 2:00 PM
 AUTO_SQUARE_OFF = time(15, 15)
+NO_ENTRY_AFTER = time(14, 0)
 
 # Connect to Angel One SmartAPI
 smart_connect = SmartConnect(api_key=API_KEY)
@@ -39,9 +38,10 @@ def place_order(transaction_type, quantity, price, symbol_token):
         "tradingsymbol": symbol_token,
         "symboltoken": 26009,
         "transactiontype": transaction_type,
-        "exchange": "NFO",
+        "exchange": "NSE",
         "ordertype": "MARKET",
         "producttype": "INTRADAY",
+        "optiontype": "CE",
         "duration": "DAY",
         "price": price,
         "squareoff": 0,
@@ -56,14 +56,14 @@ def fetch_historical_data(symbol_token, interval='FIVE_MINUTE'):
     from_time = datetime.now() - timedelta(days=1)
     to_time = datetime.now()
     historical_params = {
-        "exchange": "NFO",
+        "exchange": "NSE",
         "symboltoken": symbol_token,
         "interval": interval,
         "fromdate": from_time.strftime('%Y-%m-%d %H:%M'),
         "todate": to_time.strftime('%Y-%m-%d %H:%M'),
     }
     data = smart_connect.getCandleData(historical_params)
-    df = pd.DataFrame(data['data'])
+    df = getattr.DataFrame(data['data'])
     return df
 
 # Function to implement trailing stop loss
@@ -162,13 +162,5 @@ def run_strategy():
                 break
         else:
             print('Outside trading hours. Waiting...')
-        time.sleep(300)  # Wait for 5 minutes before checking again
-
-current_time = datetime.now().time()
-
-if current_time > NO_ENTRY_AFTER:
-    print("No new entries after 2:00 PM")
-else:
-    print("Entries allowed")
-    
+            time(0, 5)  # Wait for 5 minutes before checking again
 run_strategy()

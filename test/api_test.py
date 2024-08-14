@@ -2,6 +2,7 @@ from SmartApi.smartConnect import SmartConnect
 import pyotp
 import time as time
 from datetime import time, datetime, timedelta
+import json
 
 # Angel One API credentials
 API_KEY = "7KRaMCsN"
@@ -80,7 +81,7 @@ def log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss):
 
 # Function to check for open trades
 def check_open_trades():
-    order_book = smart_connect.orderBook()
+    order_book = json.loads(order_book_response)
     open_trades = [order for order in order_book if order['status'] in ['open', 'trigger pending']]
     return len(open_trades) > 0
 

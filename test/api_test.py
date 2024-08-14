@@ -79,17 +79,28 @@ def log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss):
     with open('trade_log.csv', 'a') as file:
         file.write(f"{entry_date},{entry_time},{exit_date},{exit_time},{profit_loss}\n")
 
-# Function to check for open trades
+def fetch_order_book():
+    # Replace this with the actual API call to get the order book
+    response = your_api_call_to_fetch_order_book()
+    return response
+
 def check_open_trades():
-    order_book = json.loads(order_book_response)
+    order_book_response = fetch_order_book()  # Get the order book data
+    order_book = json.loads(order_book_response)  # Parse the JSON response
+
     open_trades = [order for order in order_book if order['status'] in ['open', 'trigger pending']]
     return len(open_trades) > 0
 
-# Function to execute the strategy
 def bullish_engulfing_strategy(trades_today):
     if check_open_trades():
-        print("Open trades detected, skipping new order.")
-        return trades_today
+        print("There are open trades, no new trades will be placed.")
+    else:
+        print("No open trades, proceed with placing a new trade.")
+    return trades_today
+
+def run_strategy():
+    trades_today = []
+    trades_today = bullish_engulfing_strategy(trades_today)
     
     data = fetch_historical_data(SYMBOL_TOKEN)
     

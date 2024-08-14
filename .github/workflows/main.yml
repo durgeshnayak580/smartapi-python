@@ -24,4 +24,4 @@ jobs:
 
     - name: Run trading strategy
       run: |
-        python api_test.py
+        python test/api_test.py

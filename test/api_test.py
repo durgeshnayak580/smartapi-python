@@ -81,7 +81,7 @@ def log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss):
 
 def fetch_order_book():
     try:
-        response = smart_api.getOrderBook()
+        response = smart_connect.getOrderBook()
         if response['status']:
             return json.dumps(response['data'])
         else:

@@ -105,7 +105,7 @@ def bullish_engulfing_strategy(trades_today):
         print("There are open trades, no new trades will be placed.")
     else:
         print("No open trades, proceed with placing a new trade.")
-    return trades_today
+        return trades_today
 
     data = fetch_historical_data(SYMBOL_TOKEN)
     

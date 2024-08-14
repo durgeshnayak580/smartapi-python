@@ -98,10 +98,6 @@ def bullish_engulfing_strategy(trades_today):
         print("No open trades, proceed with placing a new trade.")
     return trades_today
 
-def run_strategy():
-    trades_today = []
-    trades_today = bullish_engulfing_strategy(trades_today)
-    
     data = fetch_historical_data(SYMBOL_TOKEN)
     
     if len(data) < 2:

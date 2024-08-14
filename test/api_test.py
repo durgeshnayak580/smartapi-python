@@ -81,7 +81,7 @@ def log_trade(entry_date, entry_time, exit_date, exit_time, profit_loss):
 
 def fetch_order_book():
     # Replace this with the actual API call to get the order book
-    response = your_api_call_to_fetch_order_book()
+    response = get_order_book()
     return response
 
 def check_open_trades():

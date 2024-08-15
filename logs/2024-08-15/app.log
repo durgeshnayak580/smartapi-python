@@ -1,0 +1,131 @@
+[E 240815 09:23:36 rds:58] Order placement failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+      File "/home/codespace/.python/current/lib/python3.10/json/__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/workspaces/smartapi-python/test/rds.py", line 52, in <module>
+        orderid = smartApi.placeOrder(orderparams)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 328, in placeOrder
+        response= self._postRequest("api.order.place", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 240815 09:24:05 rds:58] Order placement failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+      File "/home/codespace/.python/current/lib/python3.10/json/__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/workspaces/smartapi-python/test/rds.py", line 52, in <module>
+        orderid = smartApi.placeOrder(orderparams)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 328, in placeOrder
+        response= self._postRequest("api.order.place", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 240815 09:27:25 rds:58] Order placement failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+      File "/home/codespace/.python/current/lib/python3.10/json/__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/workspaces/smartapi-python/test/rds.py", line 52, in <module>
+        orderid = smartApi.placeOrder(orderparams)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 328, in placeOrder
+        response= self._postRequest("api.order.place", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 240815 09:27:36 rds:58] Order placement failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+      File "/home/codespace/.python/current/lib/python3.10/json/__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/workspaces/smartapi-python/test/rds.py", line 52, in <module>
+        orderid = smartApi.placeOrder(orderparams)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 328, in placeOrder
+        response= self._postRequest("api.order.place", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 240815 09:27:52 rds:58] Order placement failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+      File "/home/codespace/.python/current/lib/python3.10/json/__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/workspaces/smartapi-python/test/rds.py", line 52, in <module>
+        orderid = smartApi.placeOrder(orderparams)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 328, in placeOrder
+        response= self._postRequest("api.order.place", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''
+[E 240815 09:57:29 rds:43] Failed to get LTP for BANKNIFTY24AUG24000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 10:07:14 rds:43] Failed to get LTP for BANKNIFTY24AUG: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 10:18:06 rds:43] Failed to get LTP for BANKNIFTY24AUG: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 10:20:25 rds:43] Failed to get LTP for BANKNIFTY: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 10:29:34 rds:43] Failed to get LTP for BANKNIFTY: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 10:40:37 rds:58] Failed to get LTP for BANKNIFTY: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 10:41:19 rds:58] Failed to get LTP for BANKNIFTY: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 10:46:31 rds:58] Failed to get LTP for NIFTY_BANK: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 10:54:10 rds:58] Failed to get LTP for NIFTY_BANK: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240815 11:01:57 rds:47] Failed to get symbol token for BANKNIFTY24AUG24000CE: type object 'SmartConnect' has no attribute 'searchSymbol'
+[E 240815 11:01:57 rds:102] Symbol token retrieval failed. Trade not executed.

@@ -13,10 +13,10 @@ from SmartApi.smartWebSocketV2 import SmartWebSocketV2
 
 class TestCases(unittest.TestCase):
     def setUp(self):
-        self.api_key = 'Your Api Key'
-        self.username = 'Your client code'
-        self.pwd = 'Your pin'
-        self.token = 'Your QR value'
+        self.api_key = '7KRaMCsN'
+        self.username = 'D52721094'
+        self.pwd = '4400'
+        self.token = 'NHSTELYG24CVPPWEDS2ABGDU4M'
         self.totp = pyotp.TOTP(self.token).now()
         self.smart_api = SmartConnect(self.api_key)
         self.data = self.smart_api.generateSession(self.username, self.pwd, self.totp)
@@ -107,8 +107,8 @@ class TestCases(unittest.TestCase):
             "exchange": "NSE",
             "symboltoken": "3045",
             "interval": "FIVE_MINUTE",
-            "fromdate": "2023-10-18 09:15",
-            "todate": "2023-10-18 09:20"
+            "fromdate": "2024-08-15 09:15",
+            "todate": "2024-08-15 13:25"
         }
         candledetails = self.smart_api.getCandleData(candleParams)
         self.assertTrue("status" in candledetails)

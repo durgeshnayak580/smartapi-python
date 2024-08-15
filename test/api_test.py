@@ -59,7 +59,7 @@ def fetch_historical_data(symbol_token, interval='FIVE_MINUTE'):
     historical_params = {
         "exchange": "NSE",
         "symboltoken": symbol_token,
-        "interval": interval,
+        "interval": 5 minutes,
         "fromdate": from_time.strftime('%Y-%m-%d %H:%M'),
         "todate": to_time.strftime('%Y-%m-%d %H:%M'),
     }

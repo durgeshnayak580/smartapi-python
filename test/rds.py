@@ -99,12 +99,11 @@ def place_order(symbol, exchange, transaction_type, quantity, symbol_token, pric
 # Example usage: Placing an order only if a strike price with premium within the specified range is found
 def execute_trade():
     exchange = "NFO"
-    symbol_token = "99926009"
     option_type = "CE"  # Call Option
     expiry = "21AUG"  # Example expiry date
     transaction_type = "BUY"
     quantity = 15  # Lot size for BankNifty options
-    premium_range = (400)  # Desired premium range
+    premium_range = (450, 550)  # Desired premium range
 
     symbol, symbol_token = auto_select_strike(exchange, option_type, expiry, premium_range)
     if not symbol:

@@ -129,3 +129,15 @@
 [E 240815 10:54:10 rds:58] Failed to get LTP for NIFTY_BANK: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
 [E 240815 11:01:57 rds:47] Failed to get symbol token for BANKNIFTY24AUG24000CE: type object 'SmartConnect' has no attribute 'searchSymbol'
 [E 240815 11:01:57 rds:102] Symbol token retrieval failed. Trade not executed.
+[E 240815 11:12:52 rds:47] Failed to get symbol token for BANKNIFTY21AUG2024CE: type object 'SmartConnect' has no attribute 'searchSymbol'
+[E 240815 11:12:52 rds:102] Symbol token retrieval failed. Trade not executed.
+[E 240815 11:13:31 rds:47] Failed to get symbol token for BANKNIFTY21AUG49700CE: type object 'SmartConnect' has no attribute 'searchSymbol'
+[E 240815 11:13:31 rds:102] Symbol token retrieval failed. Trade not executed.
+[E 240815 11:25:32 rds:47] Failed to get symbol token for BANKNIFTY: type object 'SmartConnect' has no attribute 'searchSymbol'
+[E 240815 11:25:32 rds:102] Symbol token retrieval failed. Trade not executed.
+[E 240815 11:26:55 rds:47] Failed to get symbol token for NIFTYBANK: type object 'SmartConnect' has no attribute 'searchSymbol'
+[E 240815 11:26:55 rds:102] Symbol token retrieval failed. Trade not executed.
+[E 240815 11:31:50 rds:47] Failed to get symbol token for NIFTYBANK/NSE: type object 'SmartConnect' has no attribute 'searchSymbol'
+[E 240815 11:31:50 rds:102] Symbol token retrieval failed. Trade not executed.
+[E 240815 11:32:11 rds:47] Failed to get symbol token for NIFTYBANKNSE: type object 'SmartConnect' has no attribute 'searchSymbol'
+[E 240815 11:32:11 rds:102] Symbol token retrieval failed. Trade not executed.

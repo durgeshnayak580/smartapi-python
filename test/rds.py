@@ -32,17 +32,13 @@ else:
     smartApi.generateToken(refreshToken)
     res=res['data']['exchanges']
 
-   # Function to get the symbol token for the option
+# Function to get the symbol token for the option
 def get_symbol_token(symbol):
     try:
-        search_result = SmartConnect.searchSymbol('NFO', symbol)
-        if search_result and len(search_result['data']) > 0:
-            symbol_token = search_result['data'][0]['token']
-            logger.info(f"Symbol token for {symbol} is {symbol_token}")
-            return symbol_token
-        else:
-            logger.error(f"Symbol token not found for {symbol}")
-            return None
+        # Here, you would normally retrieve or generate the token; placeholder for now
+        symbol_token = "symbol_token_placeholder"
+        logger.info(f"Symbol token for {symbol} is {symbol_token}")
+        return symbol_token
     except Exception as e:
         logger.error(f"Failed to get symbol token for {symbol}: {str(e)}")
         return None
@@ -50,7 +46,7 @@ def get_symbol_token(symbol):
 # Function to get the LTP (Last Traded Price) of an option
 def get_option_ltp(symbol, exchange, symbol_token):
     try:
-        ltp_data = SmartConnect.ltpData(exchange, symbol_token, symbol)
+        ltp_data = smartApi.ltpData(exchange, symbol_token, symbol)
         ltp = ltp_data['data']['ltp']
         logger.info(f"LTP for {symbol} is {ltp}")
         return ltp
@@ -58,13 +54,24 @@ def get_option_ltp(symbol, exchange, symbol_token):
         logger.error(f"Failed to get LTP for {symbol}: {str(e)}")
         return None
 
-# Function to place an order
-def place_order(symbol, exchange, transaction_type, quantity, price=None, order_type="MARKET"):
-    try:
+# Function to auto-select the strike price based on the premium range
+def auto_select_strike(exchange, option_type, expiry, premium_range):
+    # Define a range of strike prices to check (example: 4000 to 45000)
+    strike_price_range = range(48000, 54000, 100)
+    
+    for strike_price in strike_price_range:
+        symbol = f"BANKNIFTY{expiry}{strike_price}{option_type}"
         symbol_token = get_symbol_token(symbol)
-        if not symbol_token:
-            return None
+        ltp = get_option_ltp(symbol, exchange, symbol_token)
+        if ltp and premium_range[0] <= ltp <= premium_range[1]:
+            logger.info(f"Selected strike price {symbol} with premium {ltp}")
+            return symbol, symbol_token
+    logger.info(f"No strikes found within premium range {premium_range}")
+    return None, None
 
+# Function to place an order
+def place_order(symbol, exchange, transaction_type, quantity, symbol_token, price=None, order_type="MARKET"):
+    try:
         order_params = {
             "variety": "NORMAL",  # NORMAL for intraday
             "tradingsymbol": symbol,
@@ -81,7 +88,7 @@ def place_order(symbol, exchange, transaction_type, quantity, price=None, order_
         }
 
         # Place the order
-        order_id = SmartConnect.placeOrder(order_params)
+        order_id = smartApi.placeOrder(order_params)
         logger.info(f"Order placed successfully: Order ID = {order_id}")
         return order_id
 
@@ -89,29 +96,33 @@ def place_order(symbol, exchange, transaction_type, quantity, price=None, order_
         logger.error(f"Order placement failed: {str(e)}")
         return None
 
-# Example usage: Placing an order only if the premium is within the specified range
+# Example usage: Placing an order only if a strike price with premium within the specified range is found
 def execute_trade():
-    symbol = "BANKNIFTY24AUG24000CE"  # Replace with the correct option symbol
     exchange = "NFO"
+    symbol_token = "99926009"
+    option_type = "CE"  # Call Option
+    expiry = "21AUG"  # Example expiry date
     transaction_type = "BUY"
-    quantity = 75  # Lot size for BankNifty options
-    premium_range = (450, 550)  # Desired premium range
+    quantity = 15  # Lot size for BankNifty options
+    premium_range = (400)  # Desired premium range
 
-    symbol_token = get_symbol_token(symbol)
-    if not symbol_token:
-        logger.error("Symbol token retrieval failed. Trade not executed.")
+    symbol, symbol_token = auto_select_strike(exchange, option_type, expiry, premium_range)
+    if not symbol:
+        logger.error("No suitable strike price found. Trade not executed.")
         return
 
-    ltp = get_option_ltp(symbol, exchange, symbol_token)
-    if ltp and premium_range[0] <= ltp <= premium_range[1]:
-        logger.info(f"Premium is within range: {ltp}. Proceeding with trade.")
-        order_id = place_order(symbol, exchange, transaction_type, quantity)
-        if order_id:
-            logger.info(f"Trade executed successfully: Order ID = {order_id}")
-        else:
-            logger.error("Trade execution failed.")
+    order_id = place_order(symbol, exchange, transaction_type, quantity, symbol_token)
+    if order_id:
+        logger.info(f"Trade executed successfully: Order ID = {order_id}")
     else:
-        logger.info(f"Premium {ltp} is out of range. Trade not executed.")
+        logger.error("Trade execution failed.")
 
 # Execute the trade
 execute_trade()
+
+# Logout from the session
+try:
+    smartApi.terminateSession(username)
+    logger.info("Logged out successfully.")
+except Exception as e:
+    logger.error(f"Failed to log out: {str(e)}")

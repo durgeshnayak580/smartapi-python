@@ -43,29 +43,40 @@ def get_symbol_token(symbol):
         logger.error(f"Failed to get symbol token for {symbol}: {str(e)}")
         return None
 
-# Function to get the LTP (Last Traded Price) of an option
 def get_option_ltp(symbol, exchange, symbol_token):
     try:
         ltp_data = smartApi.ltpData(exchange, symbol_token, symbol)
-        ltp = ltp_data['data']['ltp']
-        logger.info(f"LTP for {symbol} is {ltp}")
-        return ltp
+        if ltp_data and ltp_data['status']:
+            ltp = ltp_data['data']['ltp']
+            logger.info(f"LTP for {symbol} is {ltp}")
+            return ltp
+        else:
+            logger.error(f"Failed to get LTP for {symbol}. Response: {ltp_data}")
+            return None
     except Exception as e:
         logger.error(f"Failed to get LTP for {symbol}: {str(e)}")
         return None
 
 # Function to auto-select the strike price based on the premium range
 def auto_select_strike(exchange, option_type, expiry, premium_range):
-    # Define a range of strike prices to check (example: 4000 to 45000)
-    strike_price_range = range(48000, 54000, 100)
+    # Define a range of strike prices to check
+    strike_price_range = range(48000, 53000, 100)
     
     for strike_price in strike_price_range:
         symbol = f"BANKNIFTY{expiry}{strike_price}{option_type}"
         symbol_token = get_symbol_token(symbol)
+        if not symbol_token:
+            logger.error(f"Invalid symbol token for {symbol}")
+            continue
+        
         ltp = get_option_ltp(symbol, exchange, symbol_token)
         if ltp and premium_range[0] <= ltp <= premium_range[1]:
             logger.info(f"Selected strike price {symbol} with premium {ltp}")
             return symbol, symbol_token
+        elif ltp is None:
+            logger.error(f"Skipping {symbol} due to LTP retrieval failure.")
+            continue
+
     logger.info(f"No strikes found within premium range {premium_range}")
     return None, None
 
@@ -98,9 +109,11 @@ def place_order(symbol, exchange, transaction_type, quantity, symbol_token, pric
 
 # Example usage: Placing an order only if a strike price with premium within the specified range is found
 def execute_trade():
-    exchange = "NFO"
+    exchange = "NSE_FO"
+    symbol = "BANKNIFTY"
+    symbol_token = "26009"
     option_type = "CE"  # Call Option
-    expiry = "21AUG"  # Example expiry date
+    expiry = "21AUG2024"  # Example expiry date
     transaction_type = "BUY"
     quantity = 15  # Lot size for BankNifty options
     premium_range = (450, 550)  # Desired premium range
@@ -118,10 +131,3 @@ def execute_trade():
 
 # Execute the trade
 execute_trade()
-
-# Logout from the session
-try:
-    smartApi.terminateSession(username)
-    logger.info("Logged out successfully.")
-except Exception as e:
-    logger.error(f"Failed to log out: {str(e)}")

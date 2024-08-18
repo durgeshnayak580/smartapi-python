@@ -1,14 +1,13 @@
 # package import statement
-from SmartApi import SmartConnect #or from SmartApi.smartConnect import SmartConnect
-import pyotp
+from SmartApi.smartConnect import SmartConnect #or from SmartApi.smartConnect import SmartConnect
 import time
-from datetime import time, timedelta
+import pyotp
 from logzero import logger
 
 api_key = '7KRaMCsN'
 username = 'D52721094'
 pwd = '4400'
-smartApi = SmartConnect(api_key)
+smart_connect = SmartConnect(api_key)
 try:
     token = "NHSTELYG24CVPPWEDS2ABGDU4M"
     totp = pyotp.TOTP(token).now()
@@ -17,7 +16,7 @@ except Exception as e:
     raise e
 
 correlation_id = "abcde"
-data = smartApi.generateSession(username, pwd, totp)
+data = smart_connect.generateSession(username, pwd, totp)
 
 if data['status'] == False:
     logger.error(data)
@@ -28,10 +27,10 @@ else:
     authToken = data['data']['jwtToken']
     refreshToken = data['data']['refreshToken']
     # fetch the feedtoken
-    feedToken = smartApi.getfeedToken()
+    feedToken = smart_connect.getfeedToken()
     # fetch User Profile
-    res = smartApi.getProfile(refreshToken)
-    smartApi.generateToken(refreshToken)
+    res = smart_connect.getProfile(refreshToken)
+    smart_connect.generateToken(refreshToken)
     res=res['data']['exchanges']
 
 # Function to get the symbol token for the option
@@ -47,11 +46,8 @@ def get_symbol_token(symbol):
 
 def get_option_ltp(symbol, exchange, symbol_token):
     try:
-        ltp_data = smartApi.ltpData(exchange, symbol_token, symbol)
-        if not ltp_data:
-            logger.error(f"Received empty response for {symbol}.")
-            return None
-        if ltp_data.get('status'):
+        ltp_data = smart_connect.ltpData(exchange, symbol_token, symbol)
+        if ltp_data and ltp_data['status']:
             ltp = ltp_data['data']['ltp']
             logger.info(f"LTP for {symbol} is {ltp}")
             return ltp
@@ -60,7 +56,11 @@ def get_option_ltp(symbol, exchange, symbol_token):
             return None
     except Exception as e:
         logger.error(f"Failed to get LTP for {symbol}: {str(e)}")
+        if "exceeding access rate" in str(e):
+            logger.error("Rate limit exceeded. Sleeping for 60 seconds.")
+            time.sleep(60)  # Sleep for 60 seconds to allow the rate limit to reset
         return None
+
 
 # Function to auto-select the strike price based on the premium range
 def auto_select_strike(exchange, option_type, expiry, premium_range):
@@ -104,7 +104,7 @@ def place_order(symbol, exchange, transaction_type, quantity, symbol_token, pric
         }
 
         # Place the order
-        order_id = smartApi.placeOrder(order_params)
+        order_id = smart_connect.placeOrder(order_params)
         logger.info(f"Order placed successfully: Order ID = {order_id}")
         return order_id
 
@@ -116,7 +116,6 @@ def place_order(symbol, exchange, transaction_type, quantity, symbol_token, pric
 def execute_trade():
     symbol = "BANKNIFTY"
     exchange = "NSE_FO"
-    symbol_token = "99926009"
     option_type = "CE"  # Call Option
     expiry = "21AUG"  # Example expiry date
     transaction_type = "BUY"

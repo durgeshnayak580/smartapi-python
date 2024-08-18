@@ -721,3 +721,637 @@
 [E 240818 08:23:15 rds:62] Failed to get LTP for BANKNIFTY21AUG52900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
 [E 240818 08:23:15 rds:82] Skipping BANKNIFTY21AUG52900CE due to LTP retrieval failure.
 [E 240818 08:23:15 rds:128] No suitable strike price found. Trade not executed.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48000CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48100CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48200CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48300CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48400CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48500CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48600CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48700CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48800CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG48900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG48900CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49000CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49100CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49200CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49300CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49400CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49500CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49600CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49700CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49800CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG49900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG49900CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50000CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50100CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50200CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50300CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50400CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50500CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50600CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50700CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50800CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG50900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG50900CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51000CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51100CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51200CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51300CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51400CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51500CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51600CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51700CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51800CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG51900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG51900CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52000CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52100CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52200CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52300CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52400CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52500CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52600CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52700CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52800CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:60] Failed to get LTP for BANKNIFTY21AUG52900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:31:32 rds:80] Skipping BANKNIFTY21AUG52900CE due to LTP retrieval failure.
+[E 240818 08:31:32 rds:126] No suitable strike price found. Trade not executed.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48000CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48100CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48200CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48300CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48400CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48500CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48600CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48700CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48800CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG48900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG48900CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49000CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49100CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49200CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49300CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49400CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49500CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49600CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49700CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49800CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG49900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG49900CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50000CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50100CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50200CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50300CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50400CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50500CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50600CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50700CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50800CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG50900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG50900CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51000CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51100CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51200CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51300CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51400CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51500CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51600CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51700CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51800CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG51900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG51900CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52000CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52000CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52100CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52100CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52200CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52200CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52300CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52300CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52400CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52400CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52500CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52500CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52600CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52600CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52700CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52700CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52800CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52800CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:60] Failed to get LTP for BANKNIFTY21AUG52900CE: SmartConnect.ltpData() missing 1 required positional argument: 'symboltoken'
+[E 240818 08:42:10 rds:80] Skipping BANKNIFTY21AUG52900CE due to LTP retrieval failure.
+[E 240818 08:42:10 rds:126] No suitable strike price found. Trade not executed.
+[E 240818 08:45:26 rds:60] Failed to get LTP for BANKNIFTY21AUG48000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:26 rds:80] Skipping BANKNIFTY21AUG48000CE due to LTP retrieval failure.
+[E 240818 08:45:26 rds:60] Failed to get LTP for BANKNIFTY21AUG48100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:26 rds:80] Skipping BANKNIFTY21AUG48100CE due to LTP retrieval failure.
+[E 240818 08:45:26 rds:60] Failed to get LTP for BANKNIFTY21AUG48200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:26 rds:80] Skipping BANKNIFTY21AUG48200CE due to LTP retrieval failure.
+[E 240818 08:45:26 rds:60] Failed to get LTP for BANKNIFTY21AUG48300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:26 rds:80] Skipping BANKNIFTY21AUG48300CE due to LTP retrieval failure.
+[E 240818 08:45:26 rds:60] Failed to get LTP for BANKNIFTY21AUG48400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:26 rds:80] Skipping BANKNIFTY21AUG48400CE due to LTP retrieval failure.
+[E 240818 08:45:26 rds:60] Failed to get LTP for BANKNIFTY21AUG48500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:26 rds:80] Skipping BANKNIFTY21AUG48500CE due to LTP retrieval failure.
+[E 240818 08:45:26 rds:60] Failed to get LTP for BANKNIFTY21AUG48600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:26 rds:80] Skipping BANKNIFTY21AUG48600CE due to LTP retrieval failure.
+[E 240818 08:45:26 rds:60] Failed to get LTP for BANKNIFTY21AUG48700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:26 rds:80] Skipping BANKNIFTY21AUG48700CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG48800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG48800CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG48900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG48900CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49000CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49100CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49200CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49300CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49300CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49400CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49400CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49500CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49500CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49600CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49600CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49700CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49700CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49800CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49800CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG49900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG49900CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50000CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50000CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50100CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50100CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50200CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50200CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50300CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50300CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50400CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50400CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50500CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50500CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50600CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50600CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50700CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50700CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50800CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG50900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG50900CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG51000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG51000CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG51100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG51100CE due to LTP retrieval failure.
+[E 240818 08:45:27 rds:60] Failed to get LTP for BANKNIFTY21AUG51200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:27 rds:80] Skipping BANKNIFTY21AUG51200CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG51300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG51300CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG51400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG51400CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG51500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG51500CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG51600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG51600CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG51700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG51700CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG51800CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG51800CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG51900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG51900CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52000CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52000CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52100CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52100CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52200CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52200CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52300CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52300CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52400CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52400CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52500CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52500CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52600CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52600CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52700CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52700CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52800CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52800CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:60] Failed to get LTP for BANKNIFTY21AUG52900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:45:28 rds:80] Skipping BANKNIFTY21AUG52900CE due to LTP retrieval failure.
+[E 240818 08:45:28 rds:126] No suitable strike price found. Trade not executed.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48000CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48100CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48200CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48300CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48400CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48500CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48600CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48700CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48800CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG48900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG48900CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG49000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG49000CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG49100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG49100CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG49200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG49200CE due to LTP retrieval failure.
+[E 240818 08:48:18 rds:60] Failed to get LTP for BANKNIFTY21AUG49300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:18 rds:80] Skipping BANKNIFTY21AUG49300CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG49400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG49400CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG49500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG49500CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG49600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG49600CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG49700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG49700CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG49800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG49800CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG49900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG49900CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50000CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50000CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50100CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50100CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50200CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50200CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50300CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50300CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50400CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50400CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50500CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50500CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50600CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50600CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50700CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50700CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50800CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50800CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG50900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG50900CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51000CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51000CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51100CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51100CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51200CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51200CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51300CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51300CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51400CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51500CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51600CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51700CE due to LTP retrieval failure.
+[E 240818 08:48:19 rds:60] Failed to get LTP for BANKNIFTY21AUG51800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:19 rds:80] Skipping BANKNIFTY21AUG51800CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG51900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG51900CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52000CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52100CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52200CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52300CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52400CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52400CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52500CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52500CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52600CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52600CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52700CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52700CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52800CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52800CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:60] Failed to get LTP for BANKNIFTY21AUG52900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:48:20 rds:80] Skipping BANKNIFTY21AUG52900CE due to LTP retrieval failure.
+[E 240818 08:48:20 rds:126] No suitable strike price found. Trade not executed.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48000CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48100CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48200CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48300CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48400CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48500CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48600CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48700CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48800CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG48900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG48900CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG49000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG49000CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG49100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG49100CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG49200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG49200CE due to LTP retrieval failure.
+[E 240818 08:49:50 rds:60] Failed to get LTP for BANKNIFTY21AUG49300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:50 rds:80] Skipping BANKNIFTY21AUG49300CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG49400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG49400CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG49500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG49500CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG49600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG49600CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG49700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG49700CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG49800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG49800CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG49900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG49900CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50000CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50000CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50100CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50100CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50200CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50200CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50300CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50300CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50400CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50400CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50500CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50500CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50600CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50600CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50700CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50700CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50800CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50800CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG50900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG50900CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51000CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51000CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51100CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51100CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51200CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51200CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51300CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51300CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51400CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51500CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51600CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51700CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51800CE due to LTP retrieval failure.
+[E 240818 08:49:51 rds:60] Failed to get LTP for BANKNIFTY21AUG51900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:51 rds:80] Skipping BANKNIFTY21AUG51900CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52000CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52100CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52200CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52300CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52400CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52400CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52500CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52500CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52600CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52600CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52700CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52700CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52800CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52800CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:60] Failed to get LTP for BANKNIFTY21AUG52900CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:49:52 rds:80] Skipping BANKNIFTY21AUG52900CE due to LTP retrieval failure.
+[E 240818 08:49:52 rds:125] No suitable strike price found. Trade not executed.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48000CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48100CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48200CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48300CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48400CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48500CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48600CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48700CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48800CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG48900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:54:43 rds:82] Skipping BANKNIFTY21AUG48900CE due to LTP retrieval failure.
+[E 240818 08:54:43 rds:58] Failed to get LTP for BANKNIFTY21AUG49000CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:54:43 rds:60] Rate limit exceeded. Sleeping for 60 seconds.
+[E 240818 08:55:43 rds:82] Skipping BANKNIFTY21AUG49000CE due to LTP retrieval failure.
+[E 240818 08:55:43 rds:58] Failed to get LTP for BANKNIFTY21AUG49100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:43 rds:82] Skipping BANKNIFTY21AUG49100CE due to LTP retrieval failure.
+[E 240818 08:55:43 rds:58] Failed to get LTP for BANKNIFTY21AUG49200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:43 rds:82] Skipping BANKNIFTY21AUG49200CE due to LTP retrieval failure.
+[E 240818 08:55:43 rds:58] Failed to get LTP for BANKNIFTY21AUG49300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:43 rds:82] Skipping BANKNIFTY21AUG49300CE due to LTP retrieval failure.
+[E 240818 08:55:43 rds:58] Failed to get LTP for BANKNIFTY21AUG49400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:43 rds:82] Skipping BANKNIFTY21AUG49400CE due to LTP retrieval failure.
+[E 240818 08:55:43 rds:58] Failed to get LTP for BANKNIFTY21AUG49500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:43 rds:82] Skipping BANKNIFTY21AUG49500CE due to LTP retrieval failure.
+[E 240818 08:55:43 rds:58] Failed to get LTP for BANKNIFTY21AUG49600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:43 rds:82] Skipping BANKNIFTY21AUG49600CE due to LTP retrieval failure.
+[E 240818 08:55:43 rds:58] Failed to get LTP for BANKNIFTY21AUG49700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:43 rds:82] Skipping BANKNIFTY21AUG49700CE due to LTP retrieval failure.
+[E 240818 08:55:44 rds:58] Failed to get LTP for BANKNIFTY21AUG49800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:44 rds:82] Skipping BANKNIFTY21AUG49800CE due to LTP retrieval failure.
+[E 240818 08:55:44 rds:58] Failed to get LTP for BANKNIFTY21AUG49900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:44 rds:82] Skipping BANKNIFTY21AUG49900CE due to LTP retrieval failure.
+[E 240818 08:55:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:44 rds:82] Skipping BANKNIFTY21AUG50000CE due to LTP retrieval failure.
+[E 240818 08:55:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:44 rds:82] Skipping BANKNIFTY21AUG50100CE due to LTP retrieval failure.
+[E 240818 08:55:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:55:44 rds:82] Skipping BANKNIFTY21AUG50200CE due to LTP retrieval failure.
+[E 240818 08:55:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50300CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:55:44 rds:60] Rate limit exceeded. Sleeping for 60 seconds.
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG50300CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG50400CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG50500CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG50600CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG50700CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG50800CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG50900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG50900CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG51000CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG51100CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG51200CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:56:44 rds:82] Skipping BANKNIFTY21AUG51300CE due to LTP retrieval failure.
+[E 240818 08:56:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51400CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:56:44 rds:60] Rate limit exceeded. Sleeping for 60 seconds.
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG51400CE due to LTP retrieval failure.
+[E 240818 08:57:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG51500CE due to LTP retrieval failure.
+[E 240818 08:57:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG51600CE due to LTP retrieval failure.
+[E 240818 08:57:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51700CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG51700CE due to LTP retrieval failure.
+[E 240818 08:57:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG51800CE due to LTP retrieval failure.
+[E 240818 08:57:44 rds:58] Failed to get LTP for BANKNIFTY21AUG51900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG51900CE due to LTP retrieval failure.
+[E 240818 08:57:44 rds:58] Failed to get LTP for BANKNIFTY21AUG52000CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG52000CE due to LTP retrieval failure.
+[E 240818 08:57:44 rds:58] Failed to get LTP for BANKNIFTY21AUG52100CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG52100CE due to LTP retrieval failure.
+[E 240818 08:57:44 rds:58] Failed to get LTP for BANKNIFTY21AUG52200CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:44 rds:82] Skipping BANKNIFTY21AUG52200CE due to LTP retrieval failure.
+[E 240818 08:57:45 rds:58] Failed to get LTP for BANKNIFTY21AUG52300CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:45 rds:82] Skipping BANKNIFTY21AUG52300CE due to LTP retrieval failure.
+[E 240818 08:57:45 rds:58] Failed to get LTP for BANKNIFTY21AUG52400CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:45 rds:82] Skipping BANKNIFTY21AUG52400CE due to LTP retrieval failure.
+[E 240818 08:57:45 rds:58] Failed to get LTP for BANKNIFTY21AUG52500CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:45 rds:82] Skipping BANKNIFTY21AUG52500CE due to LTP retrieval failure.
+[E 240818 08:57:45 rds:58] Failed to get LTP for BANKNIFTY21AUG52600CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:57:45 rds:82] Skipping BANKNIFTY21AUG52600CE due to LTP retrieval failure.
+[E 240818 08:57:45 rds:58] Failed to get LTP for BANKNIFTY21AUG52700CE: Couldn't parse the JSON response received from the server: b'Access denied because of exceeding access rate'
+[E 240818 08:57:45 rds:60] Rate limit exceeded. Sleeping for 60 seconds.
+[E 240818 08:58:45 rds:82] Skipping BANKNIFTY21AUG52700CE due to LTP retrieval failure.
+[E 240818 08:58:45 rds:58] Failed to get LTP for BANKNIFTY21AUG52800CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:58:45 rds:82] Skipping BANKNIFTY21AUG52800CE due to LTP retrieval failure.
+[E 240818 08:58:45 rds:58] Failed to get LTP for BANKNIFTY21AUG52900CE: Couldn't parse the JSON response received from the server: b''
+[E 240818 08:58:45 rds:82] Skipping BANKNIFTY21AUG52900CE due to LTP retrieval failure.
+[E 240818 08:58:45 rds:127] No suitable strike price found. Trade not executed.
+[E 240818 09:30:25 shortcode:60] Order placement failed: Couldn't parse the JSON response received from the server: b''
+    Traceback (most recent call last):
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 227, in _request
+        data = json.loads(r.content.decode("utf8"))
+      File "/home/codespace/.python/current/lib/python3.10/json/__init__.py", line 346, in loads
+        return _default_decoder.decode(s)
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 337, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/home/codespace/.python/current/lib/python3.10/json/decoder.py", line 355, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/workspaces/smartapi-python/test/shortcode.py", line 54, in <module>
+        orderid = smartApi.placeOrder(orderparams)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 328, in placeOrder
+        response= self._postRequest("api.order.place", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 260, in _postRequest
+        return self._request(route, "POST", params)
+      File "/home/codespace/.local/lib/python3.10/site-packages/smartapi_python-1.4.8-py3.10.egg/SmartApi/smartConnect.py", line 230, in _request
+        raise ex.DataException("Couldn't parse the JSON response received from the server: {content}".format(
+    SmartApi.smartExceptions.DataException: Couldn't parse the JSON response received from the server: b''

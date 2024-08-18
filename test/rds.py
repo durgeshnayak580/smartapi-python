@@ -1,6 +1,8 @@
 # package import statement
 from SmartApi import SmartConnect #or from SmartApi.smartConnect import SmartConnect
 import pyotp
+import time
+from datetime import time, timedelta
 from logzero import logger
 
 api_key = '7KRaMCsN'
@@ -46,7 +48,10 @@ def get_symbol_token(symbol):
 def get_option_ltp(symbol, exchange, symbol_token):
     try:
         ltp_data = smartApi.ltpData(exchange, symbol_token, symbol)
-        if ltp_data and ltp_data['status']:
+        if not ltp_data:
+            logger.error(f"Received empty response for {symbol}.")
+            return None
+        if ltp_data.get('status'):
             ltp = ltp_data['data']['ltp']
             logger.info(f"LTP for {symbol} is {ltp}")
             return ltp
@@ -109,11 +114,11 @@ def place_order(symbol, exchange, transaction_type, quantity, symbol_token, pric
 
 # Example usage: Placing an order only if a strike price with premium within the specified range is found
 def execute_trade():
-    exchange = "NSE_FO"
     symbol = "BANKNIFTY"
-    symbol_token = "26009"
+    exchange = "NSE_FO"
+    symbol_token = "99926009"
     option_type = "CE"  # Call Option
-    expiry = "21AUG2024"  # Example expiry date
+    expiry = "21AUG"  # Example expiry date
     transaction_type = "BUY"
     quantity = 15  # Lot size for BankNifty options
     premium_range = (450, 550)  # Desired premium range
